@@ -1,0 +1,63 @@
+@import "../../base/_variables.scss";
+@import "../../../node_modules/animate.css/animate.min.css";
+.Menu a {
+  text-decoration: none;
+  display: inline;
+  color: inherit;
+}
+.Menu {
+  position: fixed;
+  font-family: $primary-font;
+  font-weight: bolder;
+  font-size: 18pt;
+  color: gray;
+  background-color: $menu_bg;
+  height: 8vh;
+  width: 100vw;
+  margin: 0px;
+  padding: 1vh;
+  z-index: 1000;
+  box-shadow: 0px 2px 3px 0px brown;
+  display: flex;
+  min-height: 60px;
+  min-width: 340px;
+}
+.brand-container {
+  height: 80%;
+}
+@media screen and (min-width: 640px) {
+  .left-container {
+    height: 80%;
+    position: relative;
+    top: 20%;
+    left: 0px;
+    vertical-align: baseline;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 640px) {
+  .left-container {
+    height: 100%;
+    position: relative;
+    left: 25%;
+    vertical-align: baseline;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+.right-container {
+  width: 85%;
+  text-align: right;
+  position: relative;
+  height: 100%;
+  top: 20%;
+}
+.link-container {
+  display: inline;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 12pt;
+}

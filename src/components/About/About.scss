@@ -1,0 +1,70 @@
+@import "../../base/_variables.scss";
+@import "../../../node_modules/animate.css/animate.min.css";
+
+.AboutHolder {
+  top: 10vh;
+  position: relative;
+  background-color: $about_bg;
+  height: 90vh;
+  display: flex;
+  flex-direction: row;
+}
+.AboutAnimation {
+  margin: 0px;
+  padding: 0px;
+}
+.AboutImg {
+  width: 100%;
+}
+@media screen and (min-width: 640px) {
+  .AboutImgHolder {
+    width: 20vw;
+    position: relative;
+    top: 20vh;
+    left: 20vw;
+    vertical-align: middle;
+  }
+  .About {
+    width: 50vw;
+    padding: 20px;
+    background-color: white;
+    font-family: $primary-font;
+    position: relative;
+    top: 15vh;
+    left: 18vw;
+    height: 55vh;
+    margin: 0px;
+    border-radius: 20px;
+  }
+  .AboutScroll {
+    width: 100%;
+    height: 55vh;
+    overflow-y: scroll;
+  }
+  }
+@media screen and (max-width: 640px) {
+  .AboutImgHolder {
+    width: 20vw;
+    position: relative;
+    top: 12vh;
+    left: 0vw;
+    vertical-align: middle;
+  }
+  .About {
+    width: 65vw;
+    padding: 20px;
+    background-color: white;
+    font-family: $primary-font;
+    position: relative;
+    top: 10vh;
+    left: 5vw;
+    height: 70vh;
+    margin: 0px;
+    border-radius: 20px;
+  }
+  .AboutScroll {
+    width: 100%;
+    height: 70vh;
+    overflow-y: scroll;
+  }
+}
