@@ -20,6 +20,7 @@ class About extends Component {
         <ScrollAnimation
           animateIn="bounceInLeft"
           animateOut="bounceOutLeft"
+          animateOnce={true}
           className="AboutTextAnimation"
           afterAnimatedOut={this.scrollUp}
           duration={1}
@@ -33,8 +34,8 @@ class About extends Component {
             >
               <h2>About</h2>
               <p className="larger">
-                We are a group formed under the Hack for LA bridage of Code for
-                America. Our mission is to reduce the psychological and
+                We are a group formed under the <a href="https://hackforla.org">Hack for LA</a> bridage of <a href="https://codeforamerica.org">Code for
+                America</a>. Our mission is to reduce the psychological and
                 financial burden of citizens (predominantly felt by people with
                 low-incomes) when they are faced with tough parking decisions.
               </p>
@@ -55,6 +56,7 @@ class About extends Component {
           animateIn="fadeIn"
           animateOut="fadeOut"
           className="AboutImgAnimaion"
+          animateOnce={true}
         >
           <div className="AboutImgHolder">
             <img src={hackforla} alt="Curbmap pin" className="AboutImg" />

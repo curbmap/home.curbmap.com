@@ -14,6 +14,7 @@ import Who from "./components/Who";
 import Footer from "./components/Footer";
 import Contact from "./components/Contact";
 import MainMenu from "./components/Menu";
+import Participate from "./components/Participate";
 class App extends Component {
   constructor(props) {
     super(props);
@@ -88,7 +89,7 @@ class App extends Component {
             this.appScroll = ref;
           }}
         >
-          <MainMenu scrollTo={this.scrollTo} register={this.register}/>
+          <MainMenu scrollTo={this.scrollTo} register={this.register} />
 
           {this.state.width < 640 && (
             <Menu
@@ -103,6 +104,9 @@ class App extends Component {
                 duration={750}
                 delay={200}
                 onClick={this.hideMenu}
+                className="scroll-link"
+                activeClass="scroll-link-active"
+                onSetActive={this.setActctive}
               >
                 Home
               </Link>
@@ -113,6 +117,9 @@ class App extends Component {
                 duration={750}
                 delay={200}
                 onClick={this.hideMenu}
+                className="scroll-link"
+                activeClass="scroll-link-active"
+                onSetActive={this.setActctive}
               >
                 About
               </Link>
@@ -123,8 +130,24 @@ class App extends Component {
                 duration={750}
                 delay={200}
                 onClick={this.hideMenu}
+                className="scroll-link"
+                activeClass="scroll-link-active"
+                onSetActive={this.setActctive}
               >
                 Who
+              </Link>
+              <Link
+                to="Participate"
+                spy={true}
+                smooth={true}
+                duration={750}
+                delay={200}
+                onClick={this.hideMenu}
+                className="scroll-link"
+                activeClass="scroll-link-active"
+                onSetActive={this.setActctive}
+              >
+                Participate
               </Link>
               <Link
                 to="Contact"
@@ -133,6 +156,9 @@ class App extends Component {
                 duration={750}
                 delay={200}
                 onClick={this.hideMenu}
+                className="scroll-link"
+                activeClass="scroll-link-active"
+                onSetActive={this.setActctive}
               >
                 Contact
               </Link>
@@ -147,6 +173,9 @@ class App extends Component {
             </Element>
             <Element name="Who">
               <Who />
+            </Element>
+            <Element name="Participate">
+              <Participate />
             </Element>
             <Element name="Contact">
               <Contact />

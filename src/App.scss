@@ -52,3 +52,18 @@
 .bm-overlay {
   background: rgba(0, 0, 0, 0.3);
 }
+
+.scroll-link {
+  padding: 10px;
+  width: 20vw;
+}
+
+.scroll-link-active {
+  padding: 10px;
+  width: 20vw;
+}
+
+.scroll-link-active::before {
+  color: white;
+  content: "> "
+}

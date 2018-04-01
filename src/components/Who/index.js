@@ -43,6 +43,7 @@ class Who extends Component {
           animateIn="fadeIn"
           animateOut="fadeOut"
           className="WhoImgAnimation"
+          animateOnce={true}
         >
           <div className="WhoImgHolder">
             <img src={broken} alt="Cour group" className="WhoImg" />
@@ -53,6 +54,7 @@ class Who extends Component {
           animateOut="bounceOutRight"
           className="WhoTextAnimation"
           afterAnimatedOut={this.scrollUp}
+          animateOnce={true}
           duration={1}
         >
           <div className="Who">

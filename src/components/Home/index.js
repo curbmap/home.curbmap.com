@@ -26,6 +26,7 @@ class Home extends Component {
           animateIn="fadeIn"
           animateOut="fadeOut"
           className="HomeImgAnimation"
+          animateOnce={true}
         >
           <div className="HomeImgHolder">
             <img src={logo} alt="Curbmap pin" className="HomeImg" />
@@ -36,6 +37,7 @@ class Home extends Component {
           animateOut="bounceOutRight"
           className="HomeTextAnimation"
           afterAnimatedOut={this.scrollUp}
+          animateOnce={true}
           duration={1}
         >
           <div className="Home">

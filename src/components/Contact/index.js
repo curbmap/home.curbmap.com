@@ -133,7 +133,7 @@ class Contact extends Component {
           className="ContactHeaderAnimation"
         >
           <div className="ContactHeaderHolder">
-            <div className="ContactHeader">{"Hello, Let us hear from you"}</div>
+            <div className="ContactHeader">{"Hello! Let us hear from you"}</div>
           </div>
         </ScrollAnimation>
         <ScrollAnimation

@@ -33,8 +33,11 @@ class MainMenu extends Component {
       case "Who":
         this.props.scrollTo(2 * (window.innerHeight - this.menu.clientHeight));
         break;
-      case "Contact":
+      case "Participate":
         this.props.scrollTo(3 * (window.innerHeight - this.menu.clientHeight));
+        break;
+      case "Contact":
+        this.props.scrollTo(4 * (window.innerHeight - this.menu.clientHeight));
         break;
       default:
         break;
@@ -52,10 +55,10 @@ class MainMenu extends Component {
           this.menu = ref;
         }}
       >
-      <a href="https://curbmap.com">
-        <div className="left-container">
-          <img src={logo} alt="map marker logo" className="brand-container" />Curbmap
-        </div>
+        <a href="https://curbmap.com" className="left-container">
+          <div className="left-container">
+            <img src={logo} alt="map marker logo" className="brand-container" />Curbmap
+          </div>
         </a>
         {this.state.width > 640 && (
           <div className="right-container">
@@ -69,6 +72,10 @@ class MainMenu extends Component {
             {"|"}
             <div className="link-container" onClick={this.scroll}>
               Who
+            </div>
+            {"|"}
+            <div className="link-container" onClick={this.scroll}>
+              Participate
             </div>
             {"|"}
             <div className="link-container" onClick={this.scroll}>
